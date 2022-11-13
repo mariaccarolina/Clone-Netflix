@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  background-image: url(fundo-login.png);
+  background-image: url(./image/fundo-login.png);
   background-color: rgb(24, 24, 24);
   background-size: cover;
   background-repeat: none;
+  background-attachment: fixed;
   overflow: hidden;
 }
 
@@ -25,6 +26,7 @@ header {
   align-items: center;
   transform: translate(100%, 5%);
   background-color: rgba(0, 0, 0, 0.75);
+ background-attachment: fixed;
   border-radius: 4px;
   width: 450px;
   height: 660px;
@@ -79,9 +81,28 @@ input {
   background-color: #e50914;
   border: black solid 1px;
   border-radius: 4px;
+  cursor: pointer;
   font-size: 20px;
   width: 314px;
   height: 50px;
   margin-top: 10px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+@media only screen and (max-width:900px){
+ body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: contain;
+    object-fit: cover;
+    padding: 0px;
+  }
+  .container-login{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    padding: 0%;
+    }
+  }
